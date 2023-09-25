@@ -4,7 +4,7 @@ data "aws_region" "current" {}
 # Terraform Backend Configuration is optional if you defined the backend in your runner.
 terraform {
   backend "s3" {
-    bucket = "batch-scoring-pipeline-tf-state"
+    bucket = "sagemaker-mlops-batch"
     key    = "test/test_state"
     region = "us-east-1"
   }
